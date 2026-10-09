@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "HOODTToken",
+    "name": "Hood Test",
+    "symbol": "HOODT",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "125270724187523965593206900"
+  },
+  "economics": {
+    "poolBps": 9000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x000000000000000000000000000000000000dead"
+  },
+  "notes": "Hood Test (HOODT) is a fixed-supply ERC-20 on Robinhood Chain. The constructor mints the whole 1,000,000,000 HOODT (1e27 minor units) to the deployer, the launch factory, which forwards the swarm's 10% to the Merkle distributor, seeds 90% into the Uniswap v4 pool paired with IMD at a 2,500 IMD opening market cap, and sends any remainder to remainderTo. No owner, no admin functions, no minting after launch, no fee or tax on transfer, no proxy, no delegatecall, no selfdestruct. pool.initialPrice is provenance only; the deployer derives the opening price from the economics and the deployed currency order."
+}
